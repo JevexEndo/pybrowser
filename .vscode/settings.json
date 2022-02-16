@@ -1,0 +1,22 @@
+{
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "editor.formatOnSave": true,
+    "files.watcherExclude": {
+        "${workspaceFolder}/target/**": true
+    },
+    "python.formatting.provider": "black",
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py",
+        "**/site-packages/**/*.py",
+        ".venv/**/*.py",
+        ".pytest_cache/**/*.py"
+    ],
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ]
+}
